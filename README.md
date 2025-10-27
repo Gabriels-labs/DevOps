@@ -32,4 +32,4 @@ praxisnahe Projekte aufbauen und mein Wissen in
 - **---LOADING---**
 ---
 
-📅 *Dieses Repository wird regelmäßig aktualisiert, sobald neue Module oder Projekte hinzukommen.*
+📅 *Dieses Repository wird regelmäßig aktualisiert, sobald neue Module oder Projekte hinzukommen*
