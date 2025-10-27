@@ -29,7 +29,7 @@ praxisnahe Projekte aufbauen und mein Wissen in
 
 - **VCS und Repositories**  
 - **Betriebssysteme #1**
-- **---LOADING---**
+- **----LOADING----**
 ---
 
-📅 *Dieses Repository wird regelmäßig aktualisiert, sobald neue Module oder Projekte hinzukommen*
+📅 *Dieses Repository wird regelmäßig aktualisiert, sobald neue Module oder Projekte hinzukommen.*
