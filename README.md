@@ -28,7 +28,7 @@ praxisnahe Projekte aufbauen und mein Wissen in
 ## 🧩 Aktuelle Lernmodule
 
 - **VCS und Repositories**  
-- **Betriebssysteme #1,#2,#3,#4**
+- **Betriebssysteme: Linux**
 - **----LOADING----**
 
 📅 *Dieses Repository wird regelmäßig aktualisiert, sobald neue Module oder Projekte hinzukommen*
