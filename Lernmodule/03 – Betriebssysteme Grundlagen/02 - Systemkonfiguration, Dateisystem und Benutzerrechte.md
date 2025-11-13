@@ -4,8 +4,6 @@
 Ubuntu 24.04 nutzt moderne Standards: `systemd` für Dienste, `netplan` für Netzwerke und `apt` für Paketverwaltung.  
 Die meisten Einstellungen laufen über Terminal oder Konfigurationsdateien.
 
-(… остальное здесь оставляем как в прошлой версии …)
-
 ---
 
 ## 2. Dateisystem unter Linux – Grundprinzip
