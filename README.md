@@ -25,10 +25,10 @@ Den gesamten **DevOps-Workflow** verstehen – von Code bis Produktion – praxi
 
 ## 🧩 Lernmodule
 
-- **01 – Einführung in DevOps**
-- **02 – Versionskontrolle & Repositories**
-- **03 – Betriebssysteme Grundlagen**
-- **04 – Computernetzwerke**
+- 🟢 **01 – Einführung in DevOps**
+- 🟢 **02 – Versionskontrolle & Repositories**
+- 🟢 **03 – Betriebssysteme Grundlagen** (in Arbeit)
+- 🔵 **04 – Computernetzwerke**
 - **05 – Virtualisierungssysteme**
 - **06 – Unix-Werkzeuge**
 - **07 – Shell Scripting**
