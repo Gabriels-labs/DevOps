@@ -25,29 +25,29 @@ Den gesamten **DevOps-Workflow** verstehen – von Code bis Produktion – praxi
 
 ## 🧩 Lernmodule
 
-- **LF01 – Einführung in DevOps**
-- **LF02 – Versionskontrolle & Repositories**
-- **LF03 – Betriebssysteme Grundlagen**
-- **LF04 – Computernetzwerke**
-- **LF05 – Virtualisierungssysteme**
-- **LF06 – Unix-Werkzeuge**
-- **LF07 – Shell Scripting**
-- **LF08 – Webserver & Sicherheit**
-- **LF09 – Datenbanken**
-- **LF10 – Konfigurationsmanagement**
-- **LF11 – Architektur & High Availability**
-- **LF12 – Containerisierung (Docker)**
-- **LF13 – Python für DevOps**
-- **LF14 – CI/CD-Pipelines**
-- **LF15 – Cloud Computing**
-- **LF16 – Infrastruktur als Code (IaC)**
-- **LF17 – Kubernetes**
-- **LF18 – Monitoring & Observability**
-- **LF19 – Logging**
-- **LF20 – KI-Tools im DevOps-Alltag**
-- **LF21 – Agile Methoden**
-- **LF22 – Technische Vorbereitung**
-- **LF23 – Abschlussphase**
+- **01 – Einführung in DevOps**
+- **02 – Versionskontrolle & Repositories**
+- **03 – Betriebssysteme Grundlagen**
+- **04 – Computernetzwerke**
+- **05 – Virtualisierungssysteme**
+- **06 – Unix-Werkzeuge**
+- **07 – Shell Scripting**
+- **08 – Webserver & Sicherheit**
+- **09 – Datenbanken**
+- **10 – Konfigurationsmanagement**
+- **11 – Architektur & High Availability**
+- **12 – Containerisierung (Docker)**
+- **13 – Python für DevOps**
+- **14 – CI/CD-Pipelines**
+- **15 – Cloud Computing**
+- **16 – Infrastruktur als Code (IaC)**
+- **17 – Kubernetes**
+- **18 – Monitoring & Observability**
+- **19 – Logging**
+- **20 – KI-Tools im DevOps-Alltag**
+- **21 – Agile Methoden**
+- **22 – Technische Vorbereitung**
+- **23 – Abschlussphase**
 
 
 📅 *Dieses Repository wird regelmäßig aktualisiert, sobald neue Module oder Projekte hinzukommen*
