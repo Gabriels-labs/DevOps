@@ -1,8 +1,9 @@
 # Bash und Paketverwaltung (Ubuntu 24.04)
 
-## 1. Bash – Grundidee
-Die Bash ist die zentrale Arbeitsumgebung unter Ubuntu.  
-Sie dient nicht nur zum Eingeben von Befehlen – sie ist eine **Automatisierungs- und Kontrollschicht**, über die praktisch alles im System gesteuert wird.
+## Bash – Grundidee
+Bash ist die wichtigste Shell unter Linux.  
+Sie ermöglicht das Ausführen von Befehlen, das Arbeiten mit Variablen, Pipes und einfachen Skripten.  
+Die Bash bildet die Basis für Administration, Automatisierung und tägliche Systemarbeit in Ubuntu.
 
 Warum wichtig:
 - Headless-Server haben kein GUI → alles läuft über Bash  
@@ -10,201 +11,160 @@ Warum wichtig:
 - Konfiguration, Logs, Dienste, Netzwerk – alles gesteuert über Befehle  
 - Wiederholbarkeit: alles, was in der Bash steht, kann in Skripte automatisiert werden  
 
-Die Bash ist somit **Kernkompetenz Nr. 1** im Linux-Umfeld.
+---
+
+## Eingebaute Bash-Befehle
+
+**break** – beendet eine for/while/until-Schleife  
+**continue** – startet die nächste Schleifeniteration  
+**echo** – gibt Text oder Variablen aus  
+**exit** – beendet die aktuelle Shell oder ein Skript  
+**export** – macht Variablen für Unterprozesse verfügbar  
+**hash** – speichert vollständige Pfade von Befehlen  
+**kill** – sendet Signale an Prozesse  
+**pwd** – zeigt das aktuelle Arbeitsverzeichnis  
+**read** – liest Eingaben in Variablen  
+**return** – beendet eine Funktion mit Rückgabewert  
+**shift** – verschiebt Positionsparameter nach links  
+**test** – führt logische Vergleiche aus  
+**times** – zeigt Benutzer- und Systemzeit der Shell  
+**trap** – führt Befehle bei bestimmten Signalen aus  
+**unset** – entfernt Variablen  
+**wait** – wartet auf Kindprozesse
 
 ---
 
-## 2. Grundbefehle – nicht nur “wie”, sondern “warum”
+## Bash-Skripte
 
-### Navigation
-Wird benutzt, um im Dateisystem effizient zu arbeiten:
-```bash
-ls
-cd <pfad>
-pwd
-```
-
-### Dateien/Ordner verwalten
-Ohne GUI braucht man direkte Befehle für Kopieren, Verschieben, Löschen:
-```bash
-cp quelle ziel
-mv quelle ziel
-rm datei
-mkdir neuer_ordner
-```
-
-Warum wichtig:
-- Konfigurationsdateien befinden sich überall im System  
-- Backups, Sicherung, Logsortierung – alles über Dateibefehle  
-
-### Inhalte anzeigen
-Wird für Loganalyse, Fehlersuche und Konfiguration benötigt:
-```bash
-cat datei
-less datei
-tail -f logfile
-```
-
-### Suchen
-Unersetzlich, wenn du Fehler, Konfigurationen oder Dateien finden musst:
-```bash
-grep "wort" datei
-find /pfad -name "dateiname"
-```
-
-### Verlauf / Hilfe
-Zum Lernen und Nachschlagen:
-```bash
-history
-man <befehl>
-```
-
-### Pipes
-Erlauben das Kombinieren von Tools:
-```bash
-ps aux | grep ssh
-```
-Pipes machen aus mehreren kleinen Programmen mächtige Werkzeuge.
-
-### Umleitungen
-Steuern, wo Daten herkommen und wohin sie gehen:
-```bash
-echo "text" > datei
-echo "text" >> datei
-sort < input.txt
-```
-
-Warum wichtig:
-- Logs filtern  
-- Outputs speichern  
-- Reports erstellen  
-- Daten transformieren  
-
----
-
-## 3. Variablen und Umgebungsvariablen – wie Linux intern denkt
-In der Bash werden Werte nicht “irgendwo” gespeichert – sie sind **Teil der Laufzeitumgebung**.
-
-### Lokale Variablen
-```bash
-name="test"
-echo $name
-```
-
-### Umgebungsvariablen
-```bash
-export PATH=$PATH:/opt/tools
-```
-
-Wichtige Variablen:
-- `$HOME` → persönlicher Bereich  
-- `$USER` → aktueller Benutzer  
-- `$PATH` → Wo die Shell Programme sucht  
-- `$PWD` → aktuelles Verzeichnis  
-
-Warum das wichtig ist:
-- Tools funktionieren nur, wenn `$PATH` stimmt  
-- Dienste können falsche Umgebungen haben  
-- Konfigurationsfehler entstehen oft durch “falsche” Variablen  
-
----
-
-## 4. Bash-Skripte – die Grundlage der Automatisierung
-Skripte ermöglichen reproduzierbare Abläufe statt “manuell rumklicken”.
-
-### Einfaches Skript
+### Shebang
 ```bash
 #!/bin/bash
-echo "Hallo Welt"
 ```
 
-### Ausführbar machen
+### Kommentare
+`#` – Kommentarzeile
+
+### Grundlagen
 ```bash
-chmod +x script.sh
+variable="text"
+echo $variable
 ```
-
-Warum wichtig:
-- Server-Konfiguration automatisieren  
-- Installationen standardisieren  
-- CI/CD-Jobs definieren  
-- Systemchecks planen  
-
-DevOps = Skripten, Versionieren, Ausführen.
 
 ---
 
-## 5. Paketverwaltung (APT) – das Software-Management von Ubuntu
-APT ist das Werkzeug, mit dem Ubuntu **Software installiert, aktualisiert und verwaltet**.
+## Wichtige reservierte Variablen
 
-### Update & Upgrade
+**$DIRSTACK** – Verzeichnisstack  
+**$EDITOR** – Standardeditor  
+**$EUID** – effektive UID  
+**$UID** – reale UID  
+**$FUNCNAME** – Name der aktuellen Funktion  
+**$GROUPS** – Gruppen des aktuellen Benutzers  
+**$HOME** – Home-Verzeichnis  
+**$HOSTNAME** – Hostname  
+**$HOSTTYPE** – Architektur  
+**$LC_CTYPE** – Zeichencodierung  
+**$OLDPWD** – vorheriges Verzeichnis  
+**$OSTYPE** – Betriebssystemtyp  
+**$PATH** – Suchpfad für Befehle  
+**$PPID** – Elternprozess-ID  
+**$SECONDS** – Laufzeit eines Skripts  
+**$#** – Anzahl der übergebenen Parameter  
+**$*** – alle Parameter in einer Zeile  
+**$@** – alle Parameter zeilenweise  
+**$!** – PID des letzten Hintergrundprozesses  
+**$$** – PID des aktuellen Skripts
+
+---
+
+## Bedingungen (if-then-else)
+
+### Grundstruktur
+```bash
+if <befehl oder ausdruck>
+then
+    <aktion bei wahr>
+else
+    <aktion bei falsch>
+fi
+```
+
+### Beispiel
+```bash
+#!/bin/bash
+
+source=$1
+dest=$2
+
+if [[ "$source" -eq "$dest" ]]
+then
+    echo "Quelle und Ziel sind identisch!"
+    exit 1
+else
+    cp "$source" "$dest"
+    echo "Kopieren erfolgreich!"
+fi
+```
+
+---
+
+## Logische Operatoren
+
+**-z** – String ist leer  
+**-n** – String ist nicht leer  
+**=**, **==** – Strings gleich  
+**!=** – Strings ungleich  
+**-ne** – nicht gleich  
+**-lt** – kleiner  
+**-le** – kleiner oder gleich  
+**-gt** – größer  
+**-ge** – größer oder gleich  
+**!** – Negation  
+**-a**, **&&** – logisches UND  
+**-o**, **||** – logisches ODER  
+
+---
+
+## Paketverwaltung (APT)
+
+### Grundbefehle
+
+#### Aktualisierung
 ```bash
 sudo apt update
 sudo apt upgrade
 ```
-Warum:
-- `update` aktualisiert Paketlisten  
-- `upgrade` installiert neue Versionen  
-- Sicherheitspatches kommen über APT  
 
-### Installation & Entfernung
+#### Installation / Entfernung
 ```bash
 sudo apt install <paket>
 sudo apt remove <paket>
 sudo apt purge <paket>
 sudo apt autoremove
 ```
-Warum:
-- `remove` lässt Konfigs stehen  
-- `purge` entfernt auch Konfigs  
-- `autoremove` räumt Abhängigkeiten weg  
 
-### Suche / Infos
+#### Suche / Infos
 ```bash
 apt search <paket>
 apt show <paket>
 dpkg -l
 ```
 
-Warum wichtig:
-- Versionen prüfen  
-- Abhängigkeiten verstehen  
-- Fehlerdiagnose wenn Pakete fehlen  
-
 ---
 
-## 6. snap – alternative Paketquelle
-Snap bringt Container-artige Pakete. Wird seltener genutzt, aber ist noch Teil von Ubuntu 24.04.
+## Repositories hinzufügen
 
-### Snap-Befehle
+### Beispielsyntax
 ```bash
-snap install <paket>
-snap remove <paket>
-snap list
+sudo add-apt-repository 'deb http://repository_address version branch'
 ```
 
-Snap ist wichtig zu verstehen, weil manche Programme **nur** als Snap verfügbar sind.
+### GPG-Schlüssel hinzufügen (falls nötig)
+```bash
+sudo apt-key adv --fetch-keys 'URL'
+```
 
 ---
 
-## 7. Warum Bash + Paketmanager untrennbar sind
-Beide Bausteine gehören zusammen:
-
-### Bash ermöglicht:
-- Steuerung  
-- Automatisierung  
-- Fehleranalyse  
-- Skripte  
-- Systemlogik
-
-### APT ermöglicht:
-- Installation  
-- Wartung  
-- Updates  
-- Sicherheit  
-
-Zusammen bilden sie die Grundlage jeder Systemintegration – egal ob physischer Server, Cloud-VM, Container oder CI/CD-Runner.
-
-Ohne Bash → keine Automatisierung.  
-Ohne APT → keine kontrollierte Softwareverwaltung.
-
-Beides zusammen = Basiskompetenz im DevOps-Stack.
+## Warum dieser Abschnitt wichtig ist
+Bash + APT bilden die Grundlage für Dateioperationen, Systemskripte, Automatisierung und Softwareverwaltung in Ubuntu-Umgebungen.
