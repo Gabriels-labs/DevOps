@@ -6,7 +6,7 @@ In diesem Repository dokumentiere ich meine Lernfortschritte im Bereich **DevOps
 
 ## 📘 Themen
 
-- Linux-Administration  
+- Linux-Administration (**Ubuntu, CentOS**)
 - Containerisierung (**Docker**, **Kubernetes**)  
 - CI/CD-Pipelines  
 - Cloud-Deployment (**GCP, AWS**)  
