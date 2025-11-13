@@ -60,7 +60,7 @@ Jede Ebene hat ihre Rechte:
 - **x** (ausführen) - (1) 
 
 Beispiel:
--rw-r----- 1 user team 2048 datei.txt oder mit Befehle "chmod 640 datei.txt"
+-rw-r----- 1 user team 2048 datei.txt - mit Befehle "chmod 640 datei.txt"
 
 Heißt:
 - Besitzer darf lesen + schreiben  
