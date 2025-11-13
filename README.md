@@ -9,7 +9,7 @@ In diesem Repository dokumentiere ich meine Lernfortschritte im Bereich **DevOps
 - Linux-Administration  
 - Containerisierung (**Docker**, **Kubernetes**)  
 - CI/CD-Pipelines  
-- Cloud-Deployment (**GCP**)  
+- Cloud-Deployment (**GCP, AWS**)  
 - Infrastructure as Code (**Terraform**, **Ansible**)  
 - **Bash/Shell-Scripting**  
 - **PostgreSQL**  
