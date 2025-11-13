@@ -20,8 +20,7 @@ In diesem Repository dokumentiere ich meine Lernfortschritte im Bereich **DevOps
 ## 🎯 Ziele
 
 Den gesamten **DevOps-Workflow** verstehen – von Code bis Produktion –  
-praxisnahe Projekte aufbauen und mein Wissen in  
-**Netzwerktechnik**, **Betriebssystemen**, **Python** sowie **Datenbanken** vertiefen.
+praxisnahe Projekte aufbauen und mein Wissen in **Netzwerktechnik**, **Betriebssystemen**, **Python** sowie **Datenbanken** vertiefen.
 
 ---
 
