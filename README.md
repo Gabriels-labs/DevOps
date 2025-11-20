@@ -27,7 +27,7 @@ Den gesamten **DevOps-Workflow** verstehen – von Code bis Produktion – praxi
 
 - 🟢 **01 – Einführung in DevOps**
 - 🟢 **02 – Versionskontrolle & Repositories**
-- 🟢 **03 – Betriebssysteme Grundlagen** (in Arbeit)
+- 🟢 **03 – Betriebssysteme Grundlagen**
 - 🟢 **04 – Computernetzwerke**
 - 🟢 **05 – Virtualisierungssysteme**
 - 🔵 **06 – Unix-Werkzeuge**
