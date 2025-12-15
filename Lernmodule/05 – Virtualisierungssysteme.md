@@ -139,9 +139,3 @@ Komplette Plattform für die Entwicklung und Ausführung von Anwendungen.
 Fertige Anwendungen, die direkt genutzt werden können.  
 **Beispiele:** Microsoft 365, Gmail.
 
----
-
-## 11. Kurzfazit
-Virtualisierung bildet die technische Basis moderner Cloud-Plattformen.  
-Sie sorgt für effiziente Ressourcennutzung, geringere Kosten und flexible skalierbare IT-Umgebungen – lokal und in der Cloud.
-
