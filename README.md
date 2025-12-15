@@ -30,9 +30,9 @@ Den gesamten **DevOps-Workflow** verstehen – von Code bis Produktion – praxi
 - 🟢 **03 – Betriebssysteme Grundlagen**
 - 🟢 **04 – Computernetzwerke**
 - 🟢 **05 – Virtualisierungssysteme**
-- 🔵 **06 – Unix-Werkzeuge**
-- **07 – Shell Scripting**
-- **08 – Webserver & Sicherheit**
+- 🟢 **06 – Unix-Werkzeuge**
+- 🟢 **07 – Shell Scripting**
+- 🔵 **08 – Webserver & Sicherheit**
 - **09 – Datenbanken**
 - **10 – Konfigurationsmanagement**
 - **11 – Architektur & High Availability**
